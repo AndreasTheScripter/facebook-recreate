@@ -1,0 +1,336 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+hr { 
+    border: 0;
+    padding: 0; 
+    height: 1px;
+    margin: 1em 0;
+	display: block;
+    border-top: 1px solid #dddfe2;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.header {
+	width: 100%;
+	//position: fixed;
+	overflow: hidden;
+	padding: 10px 0px;
+    background-image: linear-gradient(#4e69a2, #3b5998 50%);
+	border-bottom: 1px solid #133783;
+}
+
+/* JIKA LOGO YANG DI INGINKAN TEXT BUKAN GAMBAR!
+.header a {
+	float: left;
+	color: #fff;
+	font-size: 40px;
+	padding-top: 8px;
+	font-style: normal;
+	font-family: 'Facebook';
+}
+*/
+
+.header a img {
+	float: left;
+	max-width: 17%;
+	max-height: 17%;
+	padding-top: 20px;
+}
+
+.header form {
+	float: right;
+}
+
+.content {
+	width: 100%;
+	height: 620px;
+	background-image: linear-gradient(#fff, #D3D8E8 50%);
+}
+
+.left-content {
+	float: left;
+	margin-right: 15px;
+	width: 565px;
+}
+
+.right-content {
+	float: right;
+	max-width: 400px
+}
+
+.desc {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.text1 {
+	width: 450px;
+	color: #0e385f;
+	font-size: 20px;
+	margin-top: 40px;
+	font-weight: bold;
+	line-height: 29px;
+	font-family: "Arial";
+}
+
+.text2 {
+	color: #333;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: "Arial";
+}
+
+.text3 {
+	color: #1d2129;
+	font-size: 19px;
+	font-weight: normal;
+	font-family: "Arial";
+}
+
+.cool-link {
+    display: inline-block;
+}
+
+.cool-link::after {
+	width: 0;
+    content: '';
+	height: 1px;
+	display: block;
+	background: transparent;
+	transition: width .5s ease, background-color .8s ease;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    background: #9cb4d8;
+}
+
+.footer {
+	background: #fff;
+}
+
+.footer p { 
+	color: #737373;
+	font-size: 11px;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Arial';
+}
+
+.language-page {
+	list-style: none;
+	text-align: center;
+}
+
+.language-page li {
+	color: #737373;
+	display: inline;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: "Arial";
+}
+
+.language-page li a {
+	color: #365899;
+	padding: 0px 5px;
+}
+
+.link-menu1, .link-menu2, .link-menu3 {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+
+.link-menu1 li, .link-menu2 li, .link-menu3 li {
+	color: #737373;
+	display: inline;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: "Arial";
+}
+
+.link-menu1 li a, .link-menu2 li a, .link-menu3 li a {
+	color: #365899;
+	padding: 0px 5px;
+}
+
+
+
+/*//////////////////
+// TENTANG (FORM) //
+//////////////////*/
+
+.form span input {
+    width: 377px;
+    height: 20px;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+	margin-bottom: 10px;
+	border: solid 1px #bdc7d8;
+}
+
+.form p {
+	margin: 0;
+	color: #777;
+	width: 316px;
+	font-size: 11px;
+	padding: 15px 0px;
+	font-weight: normal;
+	font-family: "Arial";
+}
+
+.form p a {
+	color: #365899;
+}
+
+.form button {
+	border-radius: 5px;
+	padding: 8px 55px;
+	border: solid 1px #3b6e22;
+	background: #67ae55;
+	color: #fff;
+	font-size: 19px;
+	text-shadow: 0px 1px 3px #000;
+}
+
+.birthdate a {
+	color: #365899;
+	font-size: 11px;
+	max-width: 150px;
+	padding-left: 5px;
+	font-weight: normal;
+	font-family: "Arial";
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.birthdate label {
+	margin: 0px;
+	color: #1d2129;
+	font-size: 18px;
+	padding: 5px 0px;
+	font-weight: normal;
+	font-family: "Arial";
+	display: inline-block;
+}
+
+.birthdate select {
+	margin: 0;
+	padding: 4px 5px;
+	border: solid 1px #ccc;
+	border-radius: 0;
+}
+
+.gender {
+	color: #1d2129;
+	font-size: 18px;
+	padding-top: 18px;
+	font-weight: normal;
+	font-family: 'Arial';
+}
+
+/* TENTANG (TOMBOL) */
+
+.header form button {
+	border: none;
+	width: 4em;
+	color: #fff;
+	float: left;
+	height: 1.8em;
+	cursor: pointer;
+	outline: solid 1px;
+	margin-top: 19.3px;
+	font-style: normal;
+	font-family: "arial";
+	outline-color: #29487d;
+	background-color: #4267b2;
+	transition: all 0.5s ease; /* BUG: Jika broswer di-refresh (2 sampai 5 kali) tombol "Masuk" akan melayang dari atas ke tempat seharusnya. */
+
+	overflow: hidden;
+	position: relative;
+}
+
+.header form button:hover {
+    background: #34569c;
+}
+
+.header form button:active {
+    padding: 0px;
+}
+
+.header form button .ripple {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.9s linear;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* TENTANG (INPUT & LABEL) */
+
+.email, .password {
+	float:left;
+	margin-right: 20px;
+}
+
+.email label, .password label {
+	color: #fff;
+	float:left;
+	font-size: 12px;
+	margin-bottom: 2px;
+	font-style: normal; 
+	font-family: "arial";
+}
+
+.email input, .password input {
+	width: 153px;
+	height: 20px;
+	//text-align: center;
+	border: solid 1px #333;
+}
+
+.password a {
+	float: left;
+	color: #9cb4d8;
+	margin-top: 4px;
+	font-size: 12px;
+	font-style: normal; 
+	font-family: "arial";
+	text-decoration: none;
+}
+
+/* LAIN-NYA */
+
+#wrapper {
+	width: 994px;
+	margin: 0 auto;
+}
+
+#wrapper2 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'facebook';
+	src: url("assets/fonts/Facebook Letter Faces.otf") format("opentype");
+}
